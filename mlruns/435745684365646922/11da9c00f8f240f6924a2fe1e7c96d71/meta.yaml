@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/11da9c00f8f240f6924a2fe1e7c96d71/artifacts
+end_time: 1754868958021
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: 11da9c00f8f240f6924a2fe1e7c96d71
+run_name: suave-trout-906
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754868945743
+status: 3
+tags: []
+user_id: Sreerag

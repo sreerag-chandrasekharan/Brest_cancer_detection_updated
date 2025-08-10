@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/a8d5c3caf2ff4cea80f3aa716ed2a242/artifacts
+end_time: 1754868531155
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: a8d5c3caf2ff4cea80f3aa716ed2a242
+run_name: bittersweet-crow-973
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754868530770
+status: 3
+tags: []
+user_id: Sreerag

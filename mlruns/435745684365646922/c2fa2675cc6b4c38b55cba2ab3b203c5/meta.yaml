@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/c2fa2675cc6b4c38b55cba2ab3b203c5/artifacts
+end_time: 1754868496587
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: c2fa2675cc6b4c38b55cba2ab3b203c5
+run_name: kindly-doe-441
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754868496290
+status: 3
+tags: []
+user_id: Sreerag
