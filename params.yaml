@@ -1,0 +1,7 @@
+# params.yaml
+train:
+  test_size: 0.3
+  random_state: 42
+  C: 1.0
+  class_weight: balanced
+  max_iter: 1000

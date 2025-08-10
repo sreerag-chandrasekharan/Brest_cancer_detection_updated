@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/bec164de970d4e6e8834f33b72641453/artifacts
+end_time: 1754868066814
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: bec164de970d4e6e8834f33b72641453
+run_name: thundering-midge-684
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754868066452
+status: 3
+tags: []
+user_id: Sreerag
