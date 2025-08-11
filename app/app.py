@@ -95,10 +95,12 @@ def get_scaled_values_dict(values_dict):
         scaled_dict[key] = scaled_value
     return scaled_dict
 
-# Import the scaler
+# ----Import the scaler and model
+
+model = pickle.load(open('models/model.pkl', "rb"))
 scaler = pickle.load(open('models/scaler.pkl', "rb"))
 
-# Radar chart (unchanged from your original code)
+#------- Radar chart ------
 def add_radar_chart(input_data):
     input_data = get_scaled_values_dict(input_data)
 
@@ -157,8 +159,6 @@ def add_radar_chart(input_data):
 
 # ----Display predictions -----
 def display_predictions(input_data):
-    model = pickle.load(open('models/model.pkl', "rb"))
-    scaler = pickle.load(open('models/scaler.pkl', "rb"))
 
     input_array = np.array(list(input_data.values())).reshape(1, -1)
     input_data_scaled = scaler.transform(input_array)
@@ -175,9 +175,9 @@ def display_predictions(input_data):
                  unsafe_allow_html=True)
 
     st.write("Probability of being benign: ",
-             f"{model.predict_proba(input_data_scaled)[0][0]* 100:.2f}%")
+             model.predict_proba(input_data_scaled)[0][0])
     st.write("Probability of being malignant: ",
-             f"{model.predict_proba(input_data_scaled)[0][1]* 100:.2f}%")
+             model.predict_proba(input_data_scaled)[0][1])
 
     st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
 
