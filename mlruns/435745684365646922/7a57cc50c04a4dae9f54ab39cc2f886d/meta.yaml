@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/7a57cc50c04a4dae9f54ab39cc2f886d/artifacts
+end_time: 1754870018110
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: 7a57cc50c04a4dae9f54ab39cc2f886d
+run_name: fearless-bee-187
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754870018015
+status: 4
+tags: []
+user_id: Sreerag

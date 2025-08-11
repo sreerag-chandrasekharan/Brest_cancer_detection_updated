@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/47f39ca8ff754a5b933da830ccc362cf/artifacts
+end_time: 1754870065013
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: 47f39ca8ff754a5b933da830ccc362cf
+run_name: wistful-mole-540
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754870064909
+status: 4
+tags: []
+user_id: Sreerag

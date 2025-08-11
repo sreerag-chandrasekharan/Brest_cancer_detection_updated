@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/fb2caa7c172a40c6b4f1909b2cf4797b/artifacts
+end_time: 1754870131747
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: fb2caa7c172a40c6b4f1909b2cf4797b
+run_name: stylish-hawk-249
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754870122767
+status: 3
+tags: []
+user_id: Sreerag

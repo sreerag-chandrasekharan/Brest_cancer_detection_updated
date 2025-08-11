@@ -51,7 +51,7 @@ with mlflow.start_run() as run:
     mlflow.log_metrics(metrics)
 
 # --- Save models ---
-    import joblib
+
     os.makedirs("models", exist_ok=True)
     model_path = "Model/model.pkl"
     mlflow.sklearn.save_model(pipe, "Model/mlflow_model")  # MLflow format

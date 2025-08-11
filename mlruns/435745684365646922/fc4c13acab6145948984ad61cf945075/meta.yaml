@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Sreerag/Documents/ML_chellange/Brest_cancer_detection_updated/mlruns/435745684365646922/fc4c13acab6145948984ad61cf945075/artifacts
+end_time: 1754869900251
+entry_point_name: ''
+experiment_id: '435745684365646922'
+lifecycle_stage: active
+run_id: fc4c13acab6145948984ad61cf945075
+run_name: fearless-yak-598
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754869894300
+status: 3
+tags: []
+user_id: Sreerag
