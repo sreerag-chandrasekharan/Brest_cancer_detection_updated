@@ -54,7 +54,7 @@ def get_min_max_mean(key):
 
 # Sidebar with top 5 visible, rest in dropdown
 def add_sidebar():
-    st.sidebar.header("Cell Nuclei Measurements")
+    st.sidebar.header("Measurements from your cytology lab")
 
     input_dict = {}
 
@@ -174,20 +174,20 @@ def display_predictions(input_data):
     st.subheader('Cell cluster prediction')
     st.write("The cell cluster is: ")
     if pred == 0:
-        st.write("<span class='diagnosis bright-green'>Benign</span>", unsafe_allow_html=True)
+        st.write("<span style='color:green; font-size:24px;'>Benign</span>", unsafe_allow_html=True)
     else:
-        st.write("<span class='diagnosis bright-red'>Malignant</span>", unsafe_allow_html=True)
+        st.write("<span style='color:red;font-size:24px;'>Malignant</span>", unsafe_allow_html=True)
 
     st.write(f"Probability of being benign: {proba[0]:.2%}")
     st.write(f"Probability of being malignant: {proba[1]:.2%}")
 
-    st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
+    #st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
 
 
 # ----- main function to run the app -----
 def main():
     st.set_page_config(page_title="Breast Cancer Diagnosis",
-        page_icon="👩‍⚕️", 
+        page_icon=":microscope:", 
         layout="wide", 
         initial_sidebar_state="expanded")
     
@@ -195,9 +195,9 @@ def main():
 
     # Set up the structure
     with st.container():
-        st.title("Breast Cancer Diagnosis")
-        st.write("Please connect this app to your cytology lab to help diagnose breast cancer form your tissue sample. This app predicts using a machine learning model whether a breast mass is benign or malignant based on the measurements it receives from your cytosis lab. You can also update the measurements by hand using the sliders in the sidebar. ")
-        col1, col2 = st.columns([4,1])
+        st.title("Breast Cancer Detection App")
+        st.write("This app uses a machine learning model to determine whether a breast mass is benign or malignant based on measurements from your cytology lab. Use the sliders in the sidebar to enter your measurements.")
+        col1, col2 = st.columns([4,2])
         with col1:
             radar_chart = add_radar_chart(input_data)
             st.plotly_chart(radar_chart, use_container_width=True)
