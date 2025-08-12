@@ -54,7 +54,7 @@ def get_min_max_mean(key):
 
 # Sidebar with top 5 visible, rest in dropdown
 def add_sidebar():
-    st.sidebar.header("Measurements from your cytology lab")
+    st.sidebar.header("Measurements from Cytology lab")
 
     input_dict = {}
 
