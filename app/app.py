@@ -158,26 +158,28 @@ def add_radar_chart(input_data):
     return fig
 
 # ----Display predictions -----
-def display_predictions(input_data):
 
-    input_array = np.array(list(input_data.values())).reshape(1, -1)
+
+FEATURE_ORDER = [key for _, key in SLIDER_LABELS]
+
+def display_predictions(input_data):
+    # build in fixed order
+    row = [input_data[k] for k in FEATURE_ORDER]
+    input_array = np.array(row).reshape(1, -1)
+
     input_data_scaled = scaler.transform(input_array)
-    prediction = model.predict(input_data_scaled)
+    proba = model.predict_proba(input_data_scaled)[0]
+    pred = model.predict(input_data_scaled)[0]
 
     st.subheader('Cell cluster prediction')
     st.write("The cell cluster is: ")
-
-    if prediction[0] == 0:
-        st.write("<span class='diagnosis bright-green'>Benign</span>",
-                 unsafe_allow_html=True)
+    if pred == 0:
+        st.write("<span class='diagnosis bright-green'>Benign</span>", unsafe_allow_html=True)
     else:
-        st.write("<span class='diagnosis bright-red'>Malignant</span>",
-                 unsafe_allow_html=True)
+        st.write("<span class='diagnosis bright-red'>Malignant</span>", unsafe_allow_html=True)
 
-    st.write("Probability of being benign: ",
-             model.predict_proba(input_data_scaled)[0][0])
-    st.write("Probability of being malignant: ",
-             model.predict_proba(input_data_scaled)[0][1])
+    st.write(f"Probability of being benign: {proba[0]:.2%}")
+    st.write(f"Probability of being malignant: {proba[1]:.2%}")
 
     st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
 
