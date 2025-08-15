@@ -36,5 +36,5 @@ The next phase involves integrating mammography imaging datasets to assess cance
 1. Clone the repository:
 
 ```bash
-git clone <repo_url>
-cd <repo_folder>
+git clone <[repo_url](https://github.com/sreerag-chandrasekharan/Brest_cancer_detection_updated)>
+
